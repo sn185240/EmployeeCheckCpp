@@ -1,0 +1,16 @@
+Commands used for CPP:
+$ swig -c++ -java EmployeeCheck.i
+
+$ g++ -fPIC -c EmployeeCheck_wrap.cxx -I/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/include -I/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/include/darwin
+
+$ g++ -fPIC -c EmployeeCheck.cpp
+
+$ g++ -dynamiclib EmployeeCheck_wrap.o EmployeeCheck.o -o libemployeecheck.dylib
+
+Then define a new class called runme to basically use this library
+
+Compile using:
+$ javac *.java
+
+Run using:
+$ java -Djava.library.path=/Users/sn185240/Documents/GitHub/EmployeeCheckCpp runme
