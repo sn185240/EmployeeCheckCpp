@@ -1,10 +1,12 @@
 #!/bin/bash
 
 # Commands for CPP
-swig -c++ -java EmployeeCheck.i
-g++ -fpic -c EmployeeCheck.cxx
-g++ -fpic -c EmployeeCheck_wrap.cxx -I/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/include -I/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/include/darwin
-g++ -dynamiclib EmployeeCheck_wrap.o EmployeeCheck.o -o libemployeecheck.dylib
+swig -c++ -java example.i
+g++ -fpic -c example.cxx
+g++ -fpic -c example_wrap.cxx -I/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/include -I/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/include/darwin
+g++ -dynamiclib example_wrap.o example.o -o libexample.dylib
+# for .so:
+g++ -shared example.o example_wrap.o -o libexample.so
 
 # Define a new class called runme
 
