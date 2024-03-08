@@ -1,5 +1,5 @@
 # Use a Debian-based image with Java and necessary build tools
-FROM amazoncorretto:21
+FROM amazoncorretto:17
 
 # Install necessary tools
 # RUN apt-get update && apt-get install -y swig g++
