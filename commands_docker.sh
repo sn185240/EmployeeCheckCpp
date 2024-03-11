@@ -5,9 +5,10 @@ swig -c++ -java example.i
 
 g++ -fpic -c example.cxx
 
-g++ -fpic -c example_wrap.cxx -I/lib/jvm/java/include -I/lib/jvm/java/include/linux
+# g++ -fpic -c example_wrap.cxx -I/lib/jvm/java/include -I/lib/jvm/java/include/linux
+g++ -fpic -c example_wrap.cxx -I/lib/jvm/java-21-openjdk-arm64/include -I/lib/jvm/java-21-openjdk-arm64/include/linux
 
-g++ -dynamiclib example_wrap.o example.o -o libexample.dylib
+# g++ -dynamiclib example_wrap.o example.o -o libexample.dylib
 # for .so:
 g++ -shared example.o example_wrap.o -o libexample.so
 
