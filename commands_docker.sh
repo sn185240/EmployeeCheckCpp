@@ -14,8 +14,10 @@ g++ -fpic -c example_wrap.cxx -I/lib/jvm/java-21-openjdk-arm64/include -I/lib/jv
 g++ -shared example.o example_wrap.o -o libexample.so
 
 # Compile Java files
-# javac com/example/swig/**/*.java
-javac **/*.java
+javac com/example/swig/*.java
+javac *.java
 
 # Run Java program
 java -Djava.library.path=/usr/src/app runme
+
+jar cvf swig.jar com/example/swig/*.class

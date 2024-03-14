@@ -19,3 +19,5 @@ javac *.java
 java -Djava.library.path=/Users/sn185240/Documents/GitHub/EmployeeCheckCpp runme
 
 jar cvf swig.jar com/example/swig/*.class
+
+# docker cp 5cff7d2a538a:/usr/src/app /Users/sn185240/Documents/GitHub/EmployeeCheckCpp
