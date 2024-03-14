@@ -1,0 +1,5 @@
+/Users/sn185240/Library/Java/Extensions
+/Library/Java/Extensions
+/Network/Library/Java/Extensions
+/System/Library/Java/Extensions
+/usr/lib/java
