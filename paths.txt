@@ -1,0 +1,13 @@
+/Users/sn185240/Library/Java/Extensions
+/Library/Java/Extensions
+/Network/Library/Java/Extensions
+/System/Library/Java/Extensions
+/usr/lib/java
+
+
+Docker Looking in:
+/usr/java/packages/lib
+/usr/lib64
+/lib64
+/lib
+/usr/lib

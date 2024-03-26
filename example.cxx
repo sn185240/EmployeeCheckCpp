@@ -1,3 +1,4 @@
+// %include "std_string.i"
 #include <string>
 #include <vector>
 

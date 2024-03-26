@@ -1,6 +1,10 @@
+import java.util.Arrays;
+import java.util.Vector;
+import com.example.swig.*;
+
 public class runme {
     static {
-        System.loadLibrary("employeecheck");
+      System.loadLibrary("example");
     }
 
     // Declare the native method
@@ -9,11 +13,11 @@ public class runme {
 
     public static void main(String[] args) {
         // Call the native method
-        // boolean result = employeeCheck("John Doe", new String[]{"A", "B", "C", "D"});
-        // System.out.println("Result: " + result);
+        boolean result = example.employeeCheck("John Doe", new StringVector(new String[]{"A", "B", "C", "D"}));
+        System.out.println("Result: " + result);
 
         // Call the stringExists method
-        boolean exists = employeecheck.stringExists("Hello World", "World");
+        boolean exists = example.stringExists("Hello World", "World");
         System.out.println("String exists: " + exists);
     }
 }
