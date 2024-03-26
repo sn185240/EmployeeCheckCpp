@@ -3,3 +3,11 @@
 /Network/Library/Java/Extensions
 /System/Library/Java/Extensions
 /usr/lib/java
+
+
+Docker Looking in:
+/usr/java/packages/lib
+/usr/lib64
+/lib64
+/lib
+/usr/lib
