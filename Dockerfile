@@ -1,6 +1,6 @@
 # Use a Debian-based image with Java and necessary build tools
 # FROM amazoncorretto:17
-FROM ubuntu:latest 
+FROM ubuntu:22.04 
 
 # Install necessary tools
 RUN apt-get update && apt-get install -y swig g++ sudo
